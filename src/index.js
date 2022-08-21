@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Components
+import AproposPage from './pages/apropos'
+import HomePage from './pages/home'
+import DetailPage from './pages/detail'
+import ErrorPage from './pages/error'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="apropos" element={<AproposPage />} />
+        <Route path="detail/:id" element={<DetailPage />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
