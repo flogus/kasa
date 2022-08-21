@@ -23,7 +23,7 @@ class grid extends Component {
             <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
                 {Object.values(locations).map(({id, cover, title}) => {
                     return (
-                        <Gridelement id={id} cover={cover} titre={title} />
+                        <Gridelement key={id} id={id} cover={cover} titre={title} />
                     );
                 })}
             </div>
