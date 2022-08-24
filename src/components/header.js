@@ -8,7 +8,9 @@ class header extends Component {
         return (
             <div id="header" className='flex justify-between'>
                 <div>
-                    <img alt='Kasa' src={logo} />
+                    <Link to="/">
+                        <img alt='Kasa' src={logo} />
+                    </Link>
                 </div>
                 <div className='self-center'>
                     <ul className='flex'>

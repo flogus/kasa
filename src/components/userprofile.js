@@ -4,7 +4,7 @@ class userprofile extends Component {
     render(props) {
         return (
             <div>
-                <div>{this.props.nom} {this.props.prenom}</div>
+                <div>{this.props.title} {this.props.description}</div>
                 <div>circle</div>
             </div>
         );
