@@ -7,13 +7,15 @@ import Footer from '../components/footer'
 class detail extends Component {
     render() {
         return (
+        <div>
             <div className='m-10'>
-            <Header />
-            <div id="home">
-                <Detail />
+                <Header />
+                <div id="home">
+                    <Detail />
+                </div>
             </div>
             <Footer />
-          </div>
+        </div>
         );
     }
 }

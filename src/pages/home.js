@@ -7,14 +7,16 @@ import Footer from '../components/footer'
 class home extends Component {
     render() {
         return (
+        <div>
             <div className='m-10'>
-            <Header />
-            <div id="home">
-                <Banner bannertext="Chez vous, et partout ailleurs"/>
-                <Grid />
+                <Header />
+                <div id="home">
+                    <Banner bannertext="Chez vous, et partout ailleurs"/>
+                    <Grid />
+                </div>
             </div>
             <Footer />
-          </div>
+        </div>
         );
     }
 }
