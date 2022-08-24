@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Userprofil from '../components/userprofile'
-
+import Banner from '../components/banner'
 class detail extends Component {
     render() {
         return (
             <div>
-                Detail
+                <Banner />
                 <Userprofil nom="Smith" prenom="John"/>
             </div>
         );
