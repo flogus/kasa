@@ -6,13 +6,13 @@ import Footer from '../components/footer'
 class error extends Component {
     render() {
         return (
-        <div className='flex flex-col justify-around'>
-            <div className='m-10'>
-                <Header />
-                <Error />
+            <div className='flex flex-col min-h-screen'>
+                <div className='m-10 flex-1'>
+                    <Header />
+                    <Error />
+                </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
         );
     }
 }

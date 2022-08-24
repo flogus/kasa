@@ -7,14 +7,14 @@ import Footer from '../components/footer'
 class apropos extends Component {
     render() {
         return (
-        <div>
-            <div className='m-10'>
-                <Header />
-                <Banner/>
-                <Apropos />
+            <div className='flex flex-col min-h-screen'>
+                <div className='m-10 flex-1'>
+                    <Header />
+                    <Banner/>
+                    <Apropos />
+                </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
         );
     }
 }
