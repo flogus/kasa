@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import Header from '../components/header'
-import Banner from '../components/banner'
 import Detail from '../components/detail'
 import Footer from '../components/footer'
 
 class detail extends Component {
+    componentDidMount() {
+        document.title = "Kasa > Détail"; 
+    }
+
     render() {
         return (
             <div className='flex flex-col min-h-screen'>

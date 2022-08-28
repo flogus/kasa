@@ -5,6 +5,10 @@ import Grid from '../components/grid'
 import Footer from '../components/footer'
 
 class home extends Component {
+    componentDidMount() {
+        document.title = "Kasa"; 
+    }
+    
     render() {
         return (
             <div className='flex flex-col min-h-screen'>

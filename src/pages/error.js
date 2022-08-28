@@ -4,6 +4,9 @@ import Error from '../components/error'
 import Footer from '../components/footer'
 
 class error extends Component {
+    componentDidMount() {
+        document.title = "Kasa error 404"; 
+    }
     render() {
         return (
             <div className='flex flex-col min-h-screen'>

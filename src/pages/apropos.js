@@ -5,6 +5,10 @@ import Apropos from '../components/apropos'
 import Footer from '../components/footer'
 
 class apropos extends Component {
+    componentDidMount() {
+        document.title = "Kasa > A Propos"; 
+    }
+
     render() {
         return (
             <div className='flex flex-col min-h-screen'>
