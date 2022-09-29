@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 // Components
 import AproposPage from './pages/apropos'
 import HomePage from './pages/home'
-import DetailPage from './pages/detail'
+import FichePage from './pages/fichelogement'
 import ErrorPage from './pages/error'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,7 +17,7 @@ root.render(
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="apropos" element={<AproposPage />} />
-        <Route path="detail/:id" element={<DetailPage />} />
+        <Route path="fichelogement/:id" element={<FichePage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
