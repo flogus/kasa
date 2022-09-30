@@ -5,6 +5,7 @@ import Footer from '../components/footer/footer'
 import Tag from '../components/tag/tag'
 import locations from "../datas/logements.json";
 import Rating from '../components/rating';
+import Collapseblock from '../components/collapseblock/collapseblock'
 
 function Fichelogement() {
     const { id } = useParams()
@@ -37,7 +38,7 @@ function Fichelogement() {
                         <img className='max-h-14 rounded-full' src={currentLocation[0].host.picture} alt={currentLocation[0].host.name} />
                     </div>
                 </div>
-                <div className='flex items-center'>
+                <div className='flex items-center mb-5'>
                     <div className='flex-auto'>
                         {renderListTags(currentLocation[0].tags)}
                     </div>
@@ -45,6 +46,14 @@ function Fichelogement() {
                         <div className='text-kasa text-sm pr-2'>
                             <Rating value={currentLocation[0].rating} />
                         </div>
+                    </div>
+                </div>
+                <div className='flex flex-col lg:flex-row mb-5'>
+                    <div className='lg:mr-5 w-full' >
+                        <Collapseblock title='Description' content='dsdasd' />
+                    </div>
+                    <div className='lg:ml-5 w-full'>
+                        <Collapseblock title='Équipements' content='dsdasd'/>
                     </div>
                 </div>
             </div>
