@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 import Tag from '../components/tag'
 import locations from "../datas/logements.json";
 
-function Fichelogement(props) {
+function Fichelogement() {
     const { id } = useParams()
     const currentLocation = Object.values(locations).filter(
         element => element.id === id
@@ -39,8 +39,6 @@ function Fichelogement(props) {
                 </div>
                 <div className='flex items-center'>
                     <div className='flex-auto'>
-                        {/* <div className='text-kasa text-sm pr-2 flex'>{currentLocation[0].tags[0]}</div> */}
-                        {/* <Tag tagname={currentLocation[0].tags[0]} /> */}
                         {renderListTags(currentLocation[0].tags)}
                     </div>
                     <div className='flex flex-none items-center'>
