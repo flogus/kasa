@@ -4,6 +4,7 @@ import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
 import Tag from '../components/tag/tag'
 import locations from "../datas/logements.json";
+import Rating from '../components/rating';
 
 function Fichelogement() {
     const { id } = useParams()
@@ -41,7 +42,9 @@ function Fichelogement() {
                         {renderListTags(currentLocation[0].tags)}
                     </div>
                     <div className='flex flex-none items-center'>
-                        <div className='text-kasa text-sm pr-2'>{currentLocation[0].rating}</div>
+                        <div className='text-kasa text-sm pr-2'>
+                            <Rating value={currentLocation[0].rating} />
+                        </div>
                     </div>
                 </div>
             </div>
