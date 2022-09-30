@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logoFooter from '../assets/kasaFooter.png';
+import logoFooter from '../../assets/kasaFooter.png';
 
 export default class footer extends Component {
   render() {

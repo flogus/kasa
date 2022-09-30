@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Header from '../components/header'
-import Banner from '../components/banner'
-import Grid from '../components/grid'
-import Footer from '../components/footer'
-
+import Header from '../components/header/header'
+import Banner from '../components/banner/banner'
+import Grid from '../components/logement/grid'
+import Footer from '../components/footer/footer'
 class home extends Component {
     componentDidMount() {
         document.title = "Kasa"; 

@@ -1,9 +1,8 @@
 import React, {useEffect} from 'react';
 import { useParams } from 'react-router-dom'
-
-import Header from '../components/header'
-import Footer from '../components/footer'
-import Tag from '../components/tag'
+import Header from '../components/header/header'
+import Footer from '../components/footer/footer'
+import Tag from '../components/tag/tag'
 import locations from "../datas/logements.json";
 
 function Fichelogement() {

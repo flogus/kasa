@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from '../components/header'
-import Banner from '../components/banner'
-import Apropos from '../components/apropos'
-import Footer from '../components/footer'
+import Header from '../components/header/header'
+import Banner from '../components/banner/banner'
+import Apropos from '../components/apropos/apropos'
+import Footer from '../components/footer/footer'
 
 class apropos extends Component {
     componentDidMount() {

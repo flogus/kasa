@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import svgUp from '../assets/chevron-up.svg';
-import svgDown from '../assets/chevron-down.svg';
+import svgUp from '../../assets/chevron-up.svg';
+import svgDown from '../../assets/chevron-down.svg';
 
 class collapseblock extends Component {
     constructor(props) {

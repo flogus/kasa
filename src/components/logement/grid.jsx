@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Gridelement from './gridelement';
-import locations from "../datas/logements.json";
+import locations from "../../datas/logements.json";
 class grid extends Component {
     render() {
         return (

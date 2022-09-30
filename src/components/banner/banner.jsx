@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import bgimage from '../assets/accommodation-20-1.jpeg';
+import bgimage from '../../assets/accommodation-20-1.jpeg';
 
 
 class banner extends Component {

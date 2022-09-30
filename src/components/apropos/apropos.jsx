@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Collapseblock from './collapseblock'
+import Collapseblock from '../collapseblock/collapseblock'
 
 class apropos extends Component {
   render() {
