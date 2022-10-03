@@ -28,25 +28,24 @@ function Fichelogement() {
                 <div className='flex justify-center mb-5'>
                     <img className='max-w-full h-auto h-48 rounded-lg' src={currentLocation[0].pictures[0]} alt={currentLocation[0].title} />
                 </div>
-                <div className='flex items-center mb-5'>
-                    <div className='flex-auto'>
+                <div className='flex flex-wrap itemscenter mb-5'>
+                    <div className=' flex flex-col flex-auto basis-full md:basis-1/2'>
                         <h1 className='text-kasa text-2xl'>{currentLocation[0].title}</h1>
                         <h2 className='text-kasa text-sm'>{currentLocation[0].location}</h2>
                     </div>
-                    <div className='flex flex-none items-center'>
-                        <div className='text-kasa text-sm pr-2' style={{whiteSpace: 'pre-wrap'}}>{currentLocation[0].host.name}</div>
-                        <img className='max-h-14 rounded-full' src={currentLocation[0].host.picture} alt={currentLocation[0].host.name} />
-                    </div>
-                </div>
-                <div className='flex items-center mb-5'>
-                    <div className='flex-auto'>
+
+                    <div className=' flex flex-auto items-center basis-full md:basis-1/2 md:order-3'>
                         {renderListTags(currentLocation[0].tags)}
                     </div>
-                    <div className='flex flex-none items-center'>
-                        <div className='text-kasa text-sm pr-2'>
+                    <div className=' flex flex-none items-center basis-1/2 md:order-4'>
+                        <div className='text-kasa text-sm pr-2 flex justify-start md:justify-end  w-full'>
                             <Rating value={currentLocation[0].rating} />
                         </div>
                     </div>
+                    <div className=' flex flex-auto justify-end items-center'>
+                        <div className='text-kasa text-sm pr-2' style={{whiteSpace: 'pre-wrap'}}>{currentLocation[0].host.name}</div>
+                        <img className='max-h-14 rounded-full' src={currentLocation[0].host.picture} alt={currentLocation[0].host.name} />
+                    </div>                    
                 </div>
                 <div className='flex flex-col lg:flex-row mb-5'>
                     <div className='lg:mr-5 w-full' >
