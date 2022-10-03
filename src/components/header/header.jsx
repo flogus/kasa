@@ -12,16 +12,14 @@ class header extends Component {
                         <img alt='Kasa' src={logo} />
                     </Link>
                 </div>
-                <div className='self-center'>
-                    <ul className='flex'>
-                        <li>
-                            <Link className='p-3 text-kasa' to="/">Accueil</Link>
-                        </li>
-                        <li>
-                            <Link className='p-3 text-kasa' to="apropos">A propos</Link>
-                        </li>
-                    </ul>
-                </div>
+                <ul className='flex items-center '>
+                    <li>
+                        <Link className='p-3 text-kasa' to="/">Accueil</Link>
+                    </li>
+                    <li>
+                        <Link className='p-3 text-kasa' to="apropos">A propos</Link>
+                    </li>
+                </ul>
             </div>
         );
     }
