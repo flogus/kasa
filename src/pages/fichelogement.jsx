@@ -6,6 +6,7 @@ import Tag from '../components/tag/tag'
 import locations from "../datas/logements.json";
 import Rating from '../components/rating';
 import Collapseblock from '../components/collapseblock/collapseblock'
+import Slideshow from '../components/slideshow';
 
 function Fichelogement() {
     const { id } = useParams()
@@ -26,7 +27,8 @@ function Fichelogement() {
             <div className='m-10 flex-1'>
                 <Header />
                 <div className='flex justify-center mb-5'>
-                    <img className='max-w-full h-auto h-48 rounded-lg' src={currentLocation[0].pictures[0]} alt={currentLocation[0].title} />
+                    <Slideshow image={currentLocation[0].pictures[0]} />
+                    {/* <img className='w-full h-auto h-48 rounded-lg object-cover' src={currentLocation[0].pictures[0]} alt={currentLocation[0].title} /> */}
                 </div>
                 <div className='flex flex-wrap itemscenter mb-5'>
                     <div className=' flex flex-col flex-auto basis-full md:basis-1/2'>
