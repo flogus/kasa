@@ -27,7 +27,8 @@ function Fichelogement() {
             <div className='m-10 flex-1'>
                 <Header />
                 <div className='flex justify-center mb-5'>
-                    <Slideshow image={currentLocation[0].pictures[0]} />
+                
+                    <Slideshow images={currentLocation[0].pictures} />
                     {/* <img className='w-full h-auto h-48 rounded-lg object-cover' src={currentLocation[0].pictures[0]} alt={currentLocation[0].title} /> */}
                 </div>
                 <div className='flex flex-wrap itemscenter mb-5'>
