@@ -4,6 +4,7 @@ module.exports = {
         extend: {
             colors: {
                 'kasa': '#FC474E',
+                'lightgrey': '#f1f5f9'
             },
         },
     },
