@@ -13,7 +13,6 @@ function Fichelogement() {
     const currentLocation = Object.values(locations).filter(
         element => element.id === id
     )
-    console.log('currentLocation',currentLocation)
     useEffect((id) => {
         document.title = "Kasa > Détail " + {id}; 
     }, []);
