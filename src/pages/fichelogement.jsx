@@ -49,10 +49,10 @@ function Fichelogement() {
                 </div>
                 <div className='flex flex-col lg:flex-row mb-5'>
                     <div className='lg:mr-5 w-full' >
-                        <Collapseblock title='Description' content='dsdasd' />
+                        <Collapseblock title='Description' content={currentLocation[0].description} />
                     </div>
                     <div className='lg:ml-5 w-full'>
-                        <Collapseblock title='Équipements' content='dsdasd'/>
+                        <Collapseblock isliste={true} title='Équipements' content={currentLocation[0].equipments} />
                     </div>
                 </div>
             </div>
