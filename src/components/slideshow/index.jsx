@@ -27,12 +27,10 @@ function Slideshow(props) {
     useEffect(() => {
         console.log('useEffect')
         setCurrentimagesrc(imagesData[currentindex])
-    },[currentindex]);
+    },[currentindex,imagesData]);
 
     return (
         <div className='w-full relative'>
-            <h1>{currentindex}</h1>
-            <h2>{currentimagesrc}</h2>
             <a href='#precedent' className='absolute left-0 top-0 h-full flex items-center pl-10' onClick={imagePrev}>
                 <img className='h-16' src={previous} alt='Précédent'/>
             </a>
