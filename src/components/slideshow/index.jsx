@@ -17,7 +17,6 @@ function Slideshow(props) {
     }
     const imageNext = () => {
         if(currentindex === maximage - 1){
-            console.log('max')
             setCurrentIndex(0)            
         } else {
             setCurrentIndex(currentindex + 1)
@@ -25,7 +24,6 @@ function Slideshow(props) {
     }
 
     useEffect(() => {
-        console.log('useEffect')
         setCurrentimagesrc(imagesData[currentindex])
     },[currentindex,imagesData]);
 
