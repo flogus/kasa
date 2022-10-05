@@ -43,7 +43,7 @@ function Fichelogement() {
                         </div>
                     </div>
                     <div className=' flex flex-auto justify-end items-center'>
-                        <div className='text-kasa text-sm pr-2' style={{whiteSpace: 'pre-wrap'}}>{currentLocation[0].host.name}</div>
+                        <div className='text-kasa text-sm pr-2 text-right'>{currentLocation[0].host.name.split(' ')[0]}<br />{currentLocation[0].host.name.split(' ')[1]}</div>
                         <img className='max-h-14 rounded-full' src={currentLocation[0].host.picture} alt={currentLocation[0].host.name} />
                     </div>                    
                 </div>
