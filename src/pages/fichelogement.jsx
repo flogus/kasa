@@ -52,7 +52,7 @@ function Fichelogement() {
                         <Collapseblock title='Description' content={currentLocation[0].description} />
                     </div>
                     <div className='lg:ml-5 w-full'>
-                        <Collapseblock isliste={true} title='Équipements' content={currentLocation[0].equipments} />
+                        <Collapseblock islist={true} title='Équipements' content={currentLocation[0].equipments} />
                     </div>
                 </div>
             </div>
