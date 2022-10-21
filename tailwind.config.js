@@ -7,7 +7,7 @@ module.exports = {
                 'lightgrey': '#f1f5f9'
             },
             fontSize: {
-                '2xl': '160px'
+                'error': '160px'
             }
         },
     },
