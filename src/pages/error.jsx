@@ -14,7 +14,6 @@ class error extends Component {
                     <Header />
                     <Error />
                 </div>
-                <Footer />
             </div>
         );
     }
