@@ -17,7 +17,7 @@ class header extends Component {
                         <Link className='p-3 text-kasa' to="/">Accueil</Link>
                     </li>
                     <li>
-                        <Link className='p-3 text-kasa' to="apropos">A propos</Link>
+                        <Link className='p-3 text-kasa' to="/apropos">A propos</Link>
                     </li>
                 </ul>
             </div>
