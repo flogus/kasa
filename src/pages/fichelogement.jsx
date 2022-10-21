@@ -6,7 +6,7 @@ import Tag from '../components/tag/tag'
 import locations from "../datas/logements.json";
 import Rating from '../components/rating';
 import Collapseblock from '../components/collapseblock/collapseblock'
-import Slideshow from '../components/slideshow';
+import Slideshow from '../components/slideshow/slideshow';
 
 function Fichelogement() {
     const { id } = useParams()
