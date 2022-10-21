@@ -6,6 +6,9 @@ module.exports = {
                 'kasa': '#FC474E',
                 'lightgrey': '#f1f5f9'
             },
+            fontSize: {
+                '2xl': '160px'
+            }
         },
     },
     plugins: [],
