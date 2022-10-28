@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../components/header/header'
 import Error from '../components/error/error'
-import Footer from '../components/footer/footer'
 
 class error extends Component {
     componentDidMount() {
