@@ -8,7 +8,10 @@ module.exports = {
             },
             fontSize: {
                 'error': '160px'
-            }
+            },
+            minHeight: {
+                '90': '90%',
+              }
         },
     },
     plugins: [],
