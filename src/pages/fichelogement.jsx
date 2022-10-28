@@ -4,7 +4,7 @@ import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
 import Tag from '../components/tag/tag'
 import locations from "../datas/logements.json";
-import Rating from '../components/rating';
+import Rating from '../components/rating/rating';
 import Collapseblock from '../components/collapseblock/collapseblock'
 import Slideshow from '../components/slideshow/slideshow';
 
