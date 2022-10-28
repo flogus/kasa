@@ -9,8 +9,8 @@ function LogementVignette(props) {
     return (
       <Link to={{ pathname: `/fichelogement/${id}`}} title={title} state={{ from: "occupation " }}> 
         <div id={id} className='flex flex-col items-center rounded-lg bg-kasa text-white p-3 h-full'>
-            <img className='border-2 max-w h-auto'  src={pictures[0]} alt={title} />
-            <h2>{title}</h2>
+            <img className='border-2 max-w h-auto min-h-90'  src={pictures[0]} alt={title} />
+            <h2 className='p-2'>{title}</h2>
         </div>
       </Link>
     )
