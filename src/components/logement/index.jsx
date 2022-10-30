@@ -11,10 +11,9 @@ function LogementFactory(props) {
 
     if(type === 'detail'){
         return (
-            <LogementDetail id={id} title={title} description={description} pictures={pictures} />
+            <LogementDetail id={id} />
         );
-    }
-    if(type === 'vignette'){
+    } else {
         return (
             <LogementVignette id={id} title={title} description={description} pictures={pictures} />
         );
