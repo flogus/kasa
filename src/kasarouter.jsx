@@ -11,10 +11,10 @@ class kasarouter extends Component {
         return (
             <Router>
                 <Routes>
-                    <Route path="*" element={<ErrorPage />} />
                     <Route path="/" element={<HomePage />} />
                     <Route path="/apropos" element={<AproposPage />} />
                     <Route path="/fichelogement/:id" element={<FichePage />} />
+                    <Route path="*" element={<ErrorPage />} />
                 </Routes>
             </Router>
         );
