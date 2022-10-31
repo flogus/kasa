@@ -7,9 +7,7 @@ function Rating(props){
     
     function myFunction(value, index, array) {
         if(index < parseInt(rating)){
-            // console.log(index,'<',parseInt(rating),ratingArray[index])
             ratingArray[index] = "#FC474E"
-            // return "#FC474E"
         }
       }
     return (
