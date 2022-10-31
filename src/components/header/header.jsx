@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import logo from '../../assets/logo.jpg';
-import './header.css';
 
 class header extends Component {
     render() {
@@ -9,7 +8,7 @@ class header extends Component {
             <div id="header" className='flex justify-between'>
                 <div>
                     <Link to="/">
-                        <img alt='Kasa' src={logo} />
+                        <img className='h-28' alt='Kasa' src={logo} />
                     </Link>
                 </div>
                 <ul className='flex items-center '>
