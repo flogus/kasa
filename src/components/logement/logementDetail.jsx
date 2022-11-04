@@ -6,6 +6,7 @@ import Rating from '../rating/rating'
 import Collapseblock from '../collapseblock/collapseblock'
 import Footer from '../footer/footer';
 import locations from '../../datas/logements.json'
+import { Navigate } from "react-router-dom";
 
 
 function LogementDetail(props) {
@@ -13,6 +14,11 @@ function LogementDetail(props) {
     const currentLocation = Object.values(locations).filter(
         element => element.id === id
     )
+
+    if(currentLocation.length <= 0){
+        return <Navigate to="*" />;
+    }
+
     const renderListTags = (tags) => {
         return tags.map((tag) => <Tag key={tag} tagname={tag} />)
     }
