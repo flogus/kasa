@@ -5,7 +5,6 @@ function LogementVignette(props) {
     const id = props.id
     const title = props.title
     const pictures = props.pictures
-//linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 100%))
     return (
       <Link to={{ pathname: `/fichelogement/${id}`}} title={title} state={{ from: "occupation " }}> 
         <div id={id} className='flex flex-col items-center rounded-lg text-white p-3 h-full min-h-300px bg-cover' style={{backgroundImage: `linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 70%)),url(${pictures[0]})`}}>
